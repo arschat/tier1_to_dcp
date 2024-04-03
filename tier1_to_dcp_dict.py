@@ -11,8 +11,8 @@ tier1_to_dcp = {
     "sample_id": "specimen_from_organism.biomaterial_core.biomaterial_id",
     "donor_id": "donor_organism.biomaterial_core.biomaterial_id",
     "protocol_url": "*.protocol_core.protocols_io_doi",
-    "institute": "process.process_core.location",
-    "sample_collection_site": "process.process_core.location",
+    # "institute": "process.process_core.location",
+    # "sample_collection_site": "process.process_core.location",
     "sample_collection_relative_time_point": \
         "specimen_from_organism.biomaterial_core.timecourse.value",
     "library_id": "cell_suspension.biomaterial_core.biomaterial_id",
@@ -37,10 +37,10 @@ tier1_to_dcp = {
     "library_preparation_batch": "sequence_file.library_prep_id",
     "library_sequencing_run": "sequence_file.insdc_run_accessions",
     "sequenced_fragment": "library_preparation_protocol.end_bias",
-    "sequencing_platform": "sequencing_protocol.instrument_manufacturer_model.text",
+    "sequencing_platform": "sequencing_protocol.instrument_manufacturer_model.ontology",
     "is_primary_data": "is_primary_data",
-    "reference_genome": "reference_genome",
-    "gene_annotation_version": "analysis_file.genome_assembly_version",
+    "reference_genome": "analysis_file.genome_assembly_version",
+    "gene_annotation_version": "analysis_protocol.gene_annotation_version",
     "alignment_software": "analysis_protocol.alignment_software_version",
     "intron_inclusion": "intron_inclusion",
     "author_cell_type": "author_cell_type",
@@ -55,7 +55,7 @@ tier1_to_dcp = {
     'self_reported_ethnicity': "donor_organism.human_specific.ethnicity.text",
     'disease': "donor_organism.diseases.text",
     'tissue': "specimen_from_organism.organ.text",
-    'assay': "library_preparation_protocol.library_construction_method.text",
+    # 'assay': "library_preparation_protocol.library_construction_method.text",
     'BMI': "donor_organism.human_specific.body_mass_index",
     'condition.l1': 'condition.l1',
     'condition.l2': 'condition.l2',
@@ -70,4 +70,10 @@ tier1_to_dcp = {
     'specimen': "specimen_from_organism.biomaterial_core.biomaterial_id",
     'percent.cortex': 'percent.cortex',
     'percent.medulla': 'percent.medulla'
+}
+protocol_ids = {
+    "sample_collection_method": "collection_protocol.protocol_core.protocol_id",
+    "assay": "library_preparation_protocol.protocol_core.protocol_id",
+    "sequencing_platform": "sequencing_protocol.protocol_core.protocol_id",
+    "alignment_software": "analysis_protocol.protocol_core.protocol_id"
 }

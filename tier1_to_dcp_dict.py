@@ -24,7 +24,7 @@ tier1_to_dcp = {
     "sample_collection_method": "collection_protocol.method.text",
     "tissue_type": "tissue_type",
     # conditional
-    "sampled_site_condition": "donor_organism.diseases.text & specimen_from_organism.diseases.text",
+    "sampled_site_condition": "donor_organism.diseases.text",
     "tissue_ontology_term_id": "specimen_from_organism.organ.ontology",
     "tissue_free_text": "specimen_from_organism.organ_parts.ontology",
     "sample_preservation_method": "specimen_from_organism.preservation_storage.storage_method",
@@ -48,7 +48,7 @@ tier1_to_dcp = {
     "disease_ontology_term_id": "donor_organism.diseases.ontology",
     "self_reported_ethnicity_ontology_term_id": "donor_organism.human_specific.ethnicity.ontology",
     "development_stage_ontology_term_id": "donor_organism.development_stage.ontology",
-    # More
+    # More from author metadata of the example
     'library': "cell_suspension.biomaterial_core.biomaterial_id",
     'organism': "donor_organism.genus_species.text",
     'development_stage': "donor_organism.development_stage.text",
@@ -71,6 +71,9 @@ tier1_to_dcp = {
     'percent.cortex': 'percent.cortex',
     'percent.medulla': 'percent.medulla'
 }
+"""
+Dictionary with fields that could potentially generate a meaninigful protocol name like i.e. 10x_3_v2_protocol, biopsy_protocol etc.
+"""
 protocol_ids = {
     "sample_collection_method": "collection_protocol.protocol_core.protocol_id",
     "assay": "library_preparation_protocol.protocol_core.protocol_id",

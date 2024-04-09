@@ -1,6 +1,6 @@
 # CxG / Tier 1 to DCP spreadsheet
 
-This is a project to convert the Human Cell Atlas Tier 1 metadata fields from a published CELLxGENE dataset, to the HCA DCP metadata schema based, ingestible [spreadsheet](https://github.com/ebi-ait/geo_to_hca/tree/master/template).
+This is a project to convert the Human Cell Atlas Tier 1 metadata fields from a published CELLxGENE dataset, to the 'HCA DCP metadata schema' based, ingestible [spreadsheet](https://github.com/ebi-ait/geo_to_hca/tree/master/template).
 
 ## Usage 
 To convert there are two notebooks

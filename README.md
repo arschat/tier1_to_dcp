@@ -15,3 +15,17 @@ The packages needed for these notebooks are listed in the [requirements.txt](req
 ```bash
 pip install -r requirements.txt
 ```
+
+## TODO
+- [dcp_metadata_import.ipynb](dcp_metadata_import.ipynb)
+    - `sample_collection_relative_time_point`: `specimen_from_organism.biomaterial_core.timecourse.value`, add timecourse relevance
+    - `organism_ontology_term_id`: `donor_organism.biomaterial_core.ncbi_taxon_id`, keep only the numeric part of NCBI taxon ID
+    - `manner_of_death`: `donor_organism.death.hardy_scale`, # add donor_organism.is_living field
+    - `sample_source`: `donor_organism.is_living`, # add specimen_from_organism.transplant_organ field
+    - `sex_ontology_term_id`: `donor_organism.sex`, # remap from ontology to male/female/other
+    - `sample_collection_method`: `collection_protocol.method.ontology_label`, # add collection_id
+    - `sampled_site_condition`: `specimen_from_organism.diseases.text`, # if is healthy PATO, if adjacent PATO & adjacent disease_ontology_term_id, else disease_ontology_term_id
+    - `cell_enrichment`: `enrichment_protocol.markers`, # if CL ontology add CL label
+    - `assay_ontology_term_id`: `library_preparation_protocol.library_construction_method.ontology`, # add_library_id
+    - `alignment_software`: `analysis_protocol.alignment_software`, # split to version
+    - `development_stage_ontology_term_id`: `donor_organism.organism_age` # remap ontology to age range or specific number

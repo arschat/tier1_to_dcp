@@ -18,7 +18,6 @@ pip install -r requirements.txt
 
 ## TODO
 - [dcp_metadata_import.ipynb](dcp_metadata_import.ipynb)
-    - `sample_collection_relative_time_point`: `specimen_from_organism.biomaterial_core.timecourse.value`, add timecourse relevance
     - `organism_ontology_term_id`: `donor_organism.biomaterial_core.ncbi_taxon_id`, keep only the numeric part of NCBI taxon ID
     - `manner_of_death`: `donor_organism.death.hardy_scale`, # add donor_organism.is_living field
     - `sample_source`: `donor_organism.is_living`, # add specimen_from_organism.transplant_organ field

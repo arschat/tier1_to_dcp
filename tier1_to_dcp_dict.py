@@ -21,7 +21,7 @@ tier1_to_dcp = {
     'manner_of_death': 'donor_organism.death.hardy_scale', 
     'sample_source': 'donor_organism.is_living', 
     'sex_ontology_term_id': 'donor_organism.sex', 
-    'sample_collection_method': 'collection_protocol.method.ontology_label', 
+    'sample_collection_method': 'collection_protocol.method.text', 
     # tissue_type
     # 'sampled_site_condition': 'donor_organism.diseases.ontology_label',
     'sampled_site_condition': 'specimen_from_organism.diseases.text', # if is healthy PATO, if adjacent PATO & adjacent disease_ontology_term_id, else disease_ontology_term_id

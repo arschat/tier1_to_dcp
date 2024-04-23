@@ -18,9 +18,6 @@ pip install -r requirements.txt
 
 ## TODO
 - [dcp_metadata_import.ipynb](dcp_metadata_import.ipynb)
-    - `sex_ontology_term_id`: `donor_organism.sex`, # remap from ontology to male/female/other
-    - `sample_collection_method`: `collection_protocol.method.ontology_label`, # add collection_id
-    - `sampled_site_condition`: `specimen_from_organism.diseases.text`, # if is healthy PATO, if adjacent PATO & adjacent disease_ontology_term_id, else disease_ontology_term_id
     - `cell_enrichment`: `enrichment_protocol.markers`, # if CL ontology add CL label
     - `assay_ontology_term_id`: `library_preparation_protocol.library_construction_method.ontology`, # add_library_id
     - `alignment_software`: `analysis_protocol.alignment_software`, # split to version

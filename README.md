@@ -19,6 +19,4 @@ pip install -r requirements.txt
 ## TODO
 - [dcp_metadata_import.ipynb](dcp_metadata_import.ipynb)
     - `cell_enrichment`: `enrichment_protocol.markers`, # if CL ontology add CL label
-    - `assay_ontology_term_id`: `library_preparation_protocol.library_construction_method.ontology`, # add_library_id
-    - `alignment_software`: `analysis_protocol.alignment_software`, # split to version
     - `development_stage_ontology_term_id`: `donor_organism.organism_age` # remap ontology to age range or specific number

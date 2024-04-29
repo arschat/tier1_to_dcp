@@ -23,4 +23,4 @@ Protocols are not mapped to biomaterials & files yet
 ## TODO
 - [dcp_metadata_import.ipynb](dcp_metadata_import.ipynb)
     - `cell_enrichment`: `enrichment_protocol.markers`, # if CL ontology add CL label
-    - `development_stage_ontology_term_id`: `donor_organism.organism_age` # remap ontology to age range or specific number
+    - `development_stage_ontology_term_id`: `donor_organism.organism_age` # remap ontology to specific number

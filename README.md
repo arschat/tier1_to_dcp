@@ -16,6 +16,10 @@ The packages needed for these notebooks are listed in the [requirements.txt](req
 pip install -r requirements.txt
 ```
 
+## Known limitations
+Sequence file tab is filled only with run ID & library ID
+Protocols are not mapped to biomaterials & files yet
+
 ## TODO
 - [dcp_metadata_import.ipynb](dcp_metadata_import.ipynb)
     - `cell_enrichment`: `enrichment_protocol.markers`, # if CL ontology add CL label

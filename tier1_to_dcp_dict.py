@@ -17,10 +17,10 @@ tier1_to_dcp = {
     'library_id': 'cell_suspension.biomaterial_core.biomaterial_id',
     'library_id_repository': 'cell_suspension.biomaterial_core.biomaterial_name',
     # 'author_batch_notes': 'cell_suspension.biomaterial_core.biomaterial_description',
-    'organism_ontology_term_id': 'donor_organism.biomaterial_core.ncbi_taxon_id', 
-    'manner_of_death': 'donor_organism.death.hardy_scale', 
+    # 'organism_ontology_term_id': 'donor_organism.biomaterial_core.ncbi_taxon_id', 
+    # 'manner_of_death': 'donor_organism.death.hardy_scale', 
     # 'sample_source': 'donor_organism.is_living', 
-    'sex_ontology_term_id': 'donor_organism.sex', 
+    # 'sex_ontology_term_id': 'donor_organism.sex', 
     'sample_collection_method': 'collection_protocol.method.text', 
     # tissue_type
     # 'sampled_site_condition': 'specimen_from_organism.diseases.text', # if is healthy PATO, if adjacent PATO & adjacent disease_ontology_term_id, else disease_ontology_term_id
@@ -35,7 +35,7 @@ tier1_to_dcp = {
     'assay_ontology_term_id': 'library_preparation_protocol.library_construction_method.ontology', 
     'library_preparation_batch': 'sequence_file.library_prep_id',
     # 'library_sequencing_run': 'library_sequencing_run',
-    'library_sequencing_run': 'sequence_file.insdc_run_accessions',
+    # 'library_sequencing_run': 'sequence_file.insdc_run_accessions',
     'sequenced_fragment': 'library_preparation_protocol.end_bias',
     'sequencing_platform': 'sequencing_protocol.instrument_manufacturer_model.ontology',
     # is_primary_data
@@ -47,7 +47,7 @@ tier1_to_dcp = {
     # cell_type_ontology_term_id
     'disease_ontology_term_id': 'donor_organism.diseases.ontology',
     'self_reported_ethnicity_ontology_term_id': 'donor_organism.human_specific.ethnicity.ontology',
-    'development_stage_ontology_term_id': 'donor_organism.organism_age'
+    'development_stage_ontology_term_id': 'donor_organism.development_stage.ontology'
     # # More from author metadata of the example
     # 'library': "cell_suspension.biomaterial_core.biomaterial_id",
     # 'organism': "donor_organism.genus_species.text",

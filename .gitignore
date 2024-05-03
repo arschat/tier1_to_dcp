@@ -3,7 +3,7 @@ metadata/*
 example/*
 !metadata/bcb61471-2a44-4d00-a0af-ff085512674c_0b75c598-0893-4216-afe8-5414cab7739d_metadata.csv
 !metadata/bcb61471-2a44-4d00-a0af-ff085512674c_0b75c598-0893-4216-afe8-5414cab7739d_dcp.xlsx
-!example/example/ImmuneLandscapeccRCC_metadata_30-01-2023_tier1_obs.csv
+!example/ImmuneLandscapeccRCC_metadata_30-01-2023_tier1_obs.csv
 __pycache__
 adata_obs.csv
 .venv

@@ -7,3 +7,4 @@ example/*
 __pycache__
 adata_obs.csv
 .venv
+.gitattributes
